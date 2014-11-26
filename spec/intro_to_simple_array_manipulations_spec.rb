@@ -5,7 +5,7 @@ describe "manipulating arrays" do
     next_country = "Niger"
 
     it "adds an element to the end of an array" do
-      answer = __ # replace the underscore with your answer
+      answer = countries_in_western_africa.push(next_country)
       expect(answer.last).to eq(next_country)
     end
   end
@@ -15,10 +15,10 @@ describe "manipulating arrays" do
     prepends = "Brooklyn Heights"
 
     it "adds an element to the front of an array" do
-      answer = __ # replace the underscore with your answer
+      answer = neighborhoods_in_northwest_brooklyn.unshift(prepends)
       expect(answer).to eq(["Brooklyn Heights", "Brooklyn Yards", "Cadman Plaza", "Clinton Hill", "Downtown Brooklyn", "DUMBO"])
       expect(answer).to be_an(Array)
-      expect(ice_cream_brands.count).to eq(6)
+      expect(neighborhoods_in_northwest_brooklyn.count).to eq(6)
     end
   end
 
@@ -26,7 +26,7 @@ describe "manipulating arrays" do
     great_hits_of_the_nineties = ["Baby One More Time", "Smells Like Teen Spirit", "Missing", "Walking On The Sun", "Hard Knock Life", "Losing My Religion"]
 
     it "removes the last element from an array and returns it as the result of the method call" do
-      answer = __ # replace the underscore with your answer
+      answer = great_hits_of_the_nineties.pop
       expect(answer).to eq("Losing My Religion")
     end
 
@@ -40,7 +40,7 @@ describe "manipulating arrays" do
     removed = ["Clair Olivia Hanks Huxtable", "Dr. Heathcliff Huxtable"]
 
     it "removes the last 2 elements in an array and returns them as the result of the method call" do
-      answer = __ # replace the underscore with your answer
+      answer = characters_in_the_cosby_show.pop(2)
       expect(answer).to eq(removed)
       expect(answer.count).to eq(2)
     end
@@ -50,7 +50,7 @@ describe "manipulating arrays" do
     my_favorite_cities = ["Lagos", "Cape Town", "Nairobi", "San Francisco", "Gaborone", "New York", "Berlin", "London"]
 
     it "returns the first element in the array as the result of the method call" do
-      answer = __ # replace the underscore with your answer
+      answer = my_favorite_cities.shift
       expect(answer).to eq("Lagos")
     end
 
@@ -64,7 +64,7 @@ describe "manipulating arrays" do
     removed = ["Blue Bell Creameries", "Ben & Jerry's"]
 
     it "removes and returns the first 2 elements in array" do
-      answer = __ # replace the underscore with your answer
+      answer = ice_cream_brands.shift(2)
       expect(answer).to eq(removed)
       expect(ice_cream_brands.count).to eq(3)
     end
@@ -75,7 +75,7 @@ describe "manipulating arrays" do
     prepends = ["Mauds Ice Cream"]
 
     it "adds the elements in one array to the end of a second array on which concat is called on" do
-      answer = __ # replace the underscore with your answer
+      answer = ice_cream_brands.concat(prepends)
       expect(answer).to eq(["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's", "Mauds Ice Cream"])
       expect(answer).to be_an(Array)
       expect(ice_cream_brands.count).to eq(6)
@@ -86,8 +86,8 @@ describe "manipulating arrays" do
     list_of_esoteric_programming_languages = ["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Ook!"]
     prepends = "Malbolge"
 
+      answer = list_of_esoteric_programming_languages.insert(6, prepends) #cardinal number
     it "inserts an element to the of the sixth position in list_of_esoteric_programming_languages array" do
-      answer = __ # replace the underscore with your answer
       expect(answer).to eq(["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Malbolge", "Ook!"])
       expect(list_of_esoteric_programming_languages.count).to eq(8)
     end
@@ -97,7 +97,7 @@ describe "manipulating arrays" do
     captain_planet_and_the_planeteers = ["Captain Planet", "Gaia", "Kwame", "Gi", "Linka", "Wheeler", "Gaia"]
     new_array = ["Captain Planet", "Gaia", "Kwame", "Gi", "Linka", "Wheeler"]
     it "returns a new array by removing duplicate values in an array" do
-      answer = __ # replace the underscore with your answer
+      answer = captain_planet_and_the_planeteers.uniq
       expect(answer).to eq(["Captain Planet", "Gaia", "Kwame", "Gi", "Linka", "Wheeler"])
       expect(answer.count).to eq(6)
       expect(captain_planet_and_the_planeteers).to_not eq(new_array)
@@ -109,9 +109,8 @@ describe "manipulating arrays" do
     military_academies_in_newyork = ["United States Military Academy at West Point", " United States Merchant Marine Academy"]
 
     it "returns a new array that is a combination of two or more arrays" do
-      answer = __ # replace the underscore with your answer
-      expect(answer).to eq(["New York University", "Manhattan School of Music ", "Columbia University", "The Juilliard School", "Bard College", "Cooper Union", "United States Military Academy at West Point", " United States Merchant Marine Academy"]
-)
+      answer = private_colleges_in_newyork.push(military_academies_in_newyork).flatten
+      expect(answer).to eq(["New York University", "Manhattan School of Music ", "Columbia University", "The Juilliard School", "Bard College", "Cooper Union", "United States Military Academy at West Point", " United States Merchant Marine Academy"])
       expect(answer.count).to eq(8)
     end
   end
@@ -120,7 +119,7 @@ describe "manipulating arrays" do
     most_popular_boy_names_2014 = ["Liam", "Noah", "Ethan", "Mason", "Logan", "Lucas", "Jacob", "Aiden", "Jackson", "Jack"]
 
     it "deletes all items in array that are equal to the item passed as an argument" do
-      answer = __# replace the underscore with your answer
+      answer =  most_popular_boy_names_2014.delete("Jack")
       expect(answer).to eq("Jack")
     end
   end
@@ -131,7 +130,7 @@ describe "manipulating arrays" do
     it "delete item at the third position in most_popular_girl_names_2014 a" do
       answer = most_popular_girl_names_2014.delete_at(2) # replace the underscore with your answer
       expect(answer).to eq("Sophia",)
-      expect(answer.count).to eq(9)
+      expect(most_popular_girl_names_2014.count).to eq(9)
     end
   end
 end
