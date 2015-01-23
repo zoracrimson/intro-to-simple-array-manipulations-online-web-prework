@@ -23,33 +23,33 @@ The only code you will be altering is the underscores. Let's look at an example:
 ```ruby
 # intro_to_simple_array_manipulations_spec.rb
 
-  context 'push method' do
-    bands = ["Hozier", "Ed Sheeran", "Ariana Grande", "Usher"]
-    next_artist = "Beyonce"
+context 'push method' do
+  artists = ["Hozier", "Ed Sheeran", "Ariana Grande", "Usher"]
+  next_artist = "Beyonce"
 
-    it "adds an element to the end of an array" do
-      answer = __ # replace the underscore with your answer
-      expect(answer.last).to eq(next_country)
-    end
+  it "adds an element to the end of an array" do
+    answer = __ # replace the underscore with your answer
+    expect(answer.last).to eq(next_artist)
   end
+end
 ```
 
 This test is asking you to add the next artist, Beyonce, to the array of artists using the push method. If you didn't know what the push method was, you could always look it up in the [Ruby Docs](http://www.ruby-doc.org/core-2.2.0/Array.html#method-i-push).
 
-The answer would be to call `push` on the array and pass it the argument of `next_artist`, as seen below:
+The answer would be to delete the underscore and instead call `push` on the array and pass it the argument of `next_artist`, as seen below:
 
 ```ruby
 # intro_to_simple_array_manipulations_spec.rb
 
-  context 'push method' do
-    artists = ["Hozier", "Ed Sheeran", "Ariana Grande", "Usher"]
-    next_artist = "Beyonce"
+context 'push method' do
+  artists = ["Hozier", "Ed Sheeran", "Ariana Grande", "Usher"]
+  next_artist = "Beyonce"
 
-    it "adds an element to the end of an array" do
-      answer = artists.push(next_artist)
-      expect(answer.last).to eq(next_artist)
-    end
+  it "adds an element to the end of an array" do
+    answer = artists.push(next_artist)
+    expect(answer.last).to eq(next_artist)
   end
+end
 ```
 
 Consult the official documentation of the [Ruby Landguage](http://ruby-doc.org/core-2.2.0/) for the methods you need to use to solve the problems in this lab.
