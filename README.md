@@ -15,18 +15,9 @@ In the previous lab, you learnt how to create arrays and access the elements of 
 3. Gain proficiency understanding the result of method calls on arrays
 
 ## Instructions
-<<<<<<< HEAD
-Open `spec/intro_to_simple_array_manipulations_spec.rb` and go through each test sequentially.  Be sure to read each test very carefully. You will be filling out your answers in the spec.
-=======
->>>>>>> master
 
 Open `spec/intro_to_simple_array_manipulations_spec.rb` and go through each test sequentially.  Be sure to read each test very carefully. 
 
-<<<<<<< HEAD
-As you read the method descriptions, make sure to pay attention to understanding what the result (that is the return object) of calling a particular method on an array is because:
-
-> One of the most common problems you will encounter on your journey to becoming a software developer is not knowing what object a method returns. For example: you might assume that the result of a method call is a string but instead it is an array object that contains a string.  
-=======
 The only code you will be altering is the underscores. Let's look at an example:
 
 ```ruby
@@ -87,4 +78,3 @@ You can see that while pop removes an element from an array, its return value is
 
 
 > One of the most common problems you will encounter on your journey to becoming a software developer is not knowing what object a method returns. For example: you might assume that the result of a method call is a string but instead it is an array.  
->>>>>>> master
