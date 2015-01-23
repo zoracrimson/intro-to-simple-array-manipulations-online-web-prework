@@ -4,21 +4,21 @@ languages: ruby
 resources: 1
 ---
 # Introduction To Simple Array Manipulations
-In the previous lab, you learnt how to create arrays and access the elements of an array. Now you are ready to manipulate arrays using different ruby methods.
+In the previous lab, you learned how to create arrays and access the elements of an array. Now you are ready to manipulate arrays using different ruby methods.
 
 > Make sure to consult the Official Documentation of the Ruby Language when solving this lab.
 
 ## Objectives
 
 1. Become comfortable using the official documentation of the Ruby Language
-2. Gain proficiency performing simple array  manipulations
+2. Gain proficiency performing simple array manipulations
 3. Gain proficiency understanding the result of method calls on arrays
 
 ## Instructions
 
-Open `spec/intro_to_simple_array_manipulations_spec.rb` and go through each test sequentially.  Be sure to read each test very carefully. 
+Open `spec/intro_to_simple_array_manipulations_spec.rb` and go through each test sequentially. Be sure to read each test very carefully. 
 
-The only code you will be altering is the underscores. Let's look at an example:
+The only code you will be altering is the underscores inside of each `it` test block. Let's look at an example:
 
 ```ruby
 # intro_to_simple_array_manipulations_spec.rb
@@ -63,7 +63,7 @@ artists.push(next_artist)
 # => ["Hozier", "Ariana Grande", "Usher", "Beyonce"]
 ```
 
-However, `pop` works a little differently. Pop knocks the last element in an array off. Let's take a look:
+However, `pop` works a little differently. Pop removes the last element from an array. Let's take a look:
 
 ```ruby
 artists = ["Frida Kahlo", "Pablo Picasso", "Cai Guo-Qiang"]
