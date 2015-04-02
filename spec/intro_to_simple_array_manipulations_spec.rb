@@ -86,7 +86,7 @@ describe "manipulating arrays" do
     list_of_esoteric_programming_languages = ["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Ook!"]
     prepends = "Malbolge"
 
-    it "inserts an element to the of the sixth position in list_of_esoteric_programming_languages array" do
+    it "inserts an element to the of the seventh position in list_of_esoteric_programming_languages array" do
       answer = __ # replace the underscore with your answer
       expect(answer).to eq(["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Malbolge", "Ook!"])
       expect(list_of_esoteric_programming_languages.count).to eq(8)
