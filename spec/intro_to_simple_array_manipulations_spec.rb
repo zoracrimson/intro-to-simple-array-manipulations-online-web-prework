@@ -14,11 +14,11 @@ describe "manipulating arrays" do
 
   context "unshift method" do
     neighborhoods_in_northwest_brooklyn = ["Brooklyn Yards", "Cadman Plaza", "Clinton Hill", "Downtown Brooklyn", "DUMBO"]
-    prepends = "Brooklyn Heights"
+    new_neighborhood = "Brooklyn Heights"
 
     it "adds an element to the front of an array" do
       # replace the underscore with your answer
-      answer = neighborhoods_in_northwest_brooklyn.unshift(prepends)
+      answer = neighborhoods_in_northwest_brooklyn.unshift(new_neighborhood)
       expect(answer).to eq(["Brooklyn Heights", "Brooklyn Yards", "Cadman Plaza", "Clinton Hill", "Downtown Brooklyn", "DUMBO"])
       expect(answer).to be_an(Array)
     end
@@ -44,12 +44,12 @@ describe "manipulating arrays" do
 
   context "pop method with an argument" do
     characters_in_the_cosby_show = ["Olivia Kendall", "Lt. Martin Kendall", "Pam Tucker", "Elvin Tibideaux", "Sondra Huxtable Tibideaux", "Rudith Rudy Lilian Huxtable", "Vanessa Huxtable", "Theodore Aloysius Huxtable", "Denise Huxtable Kendall", "Clair Olivia Hanks Huxtable", "Dr. Heathcliff Huxtable"]
-    removed = ["Clair Olivia Hanks Huxtable", "Dr. Heathcliff Huxtable"]
+    characters_removed = ["Clair Olivia Hanks Huxtable", "Dr. Heathcliff Huxtable"]
 
     it "removes the last 2 elements in an array and returns them as the result of the method call" do
       # replace the underscore with your answer
       answer = characters_in_the_cosby_show.pop(2)
-      expect(answer).to eq(removed)
+      expect(answer).to eq(characters_removed)
     end
 
     it "shortens the length of the array" do
@@ -73,12 +73,12 @@ describe "manipulating arrays" do
 
   context "shift method with an argument" do
     ice_cream_brands = ["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's"]
-    removed = ["Blue Bell Creameries", "Ben & Jerry's"]
+    brands_removed = ["Blue Bell Creameries", "Ben & Jerry's"]
 
     it "removes and returns the first 2 elements in array" do
       # replace the underscore with your answer
       deleted_strings = ice_cream_brands.shift(2)
-      expect(deleted_strings).to eq(removed)
+      expect(deleted_strings).to eq(brands_removed)
     end
 
     it "shortens the length of the array by 2" do
@@ -88,11 +88,11 @@ describe "manipulating arrays" do
 
   context "concat method" do
     ice_cream_brands = ["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's"]
-    prepends = ["Mauds Ice Cream"]
+    new_ice_cream_brand = ["Mauds Ice Cream"]
 
     it "adds the elements in one array to the end of a second array on which concat is called on" do
       # replace the underscore with your answer
-      expanded_array = ice_cream_brands.concat(prepends)
+      expanded_array = ice_cream_brands.concat(new_ice_cream_brand)
       expect(expanded_array).to eq(["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's", "Mauds Ice Cream"])
       expect(expanded_array).to be_an(Array)
     end
@@ -104,11 +104,11 @@ describe "manipulating arrays" do
 
   context "insert method" do
     list_of_esoteric_programming_languages = ["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Ook!"]
-    prepend = "Malbolge"
+    another_esoteric_language = "Malbolge"
 
     it "inserts an element to the of the sixth position in list_of_esoteric_programming_languages array" do
       # replace the underscore with your answer
-      answer = list_of_esoteric_programming_languages.insert(6, prepend)
+      answer = list_of_esoteric_programming_languages.insert(6, another_esoteric_language)
       expect(answer).to eq(["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Malbolge", "Ook!"])
     end
 
@@ -144,8 +144,8 @@ describe "manipulating arrays" do
 
     it "deletes all items in array that are equal to the item passed as an argument" do
        # replace the underscore with your answer
-      deleted_string =  most_popular_boy_names_2014.delete("Jack")
-      expect(deleted_string).to eq("Jack")
+      deleted_name =  most_popular_boy_names_2014.delete("Jack")
+      expect(deleted_name).to eq("Jack")
     end
 
     it "changes the composition of the array" do
@@ -162,8 +162,8 @@ describe "manipulating arrays" do
 
     it "delete item at the third position in most_popular_girl_names_2014 a" do
       # replace the underscore with your answer
-      deleted_item = most_popular_girl_names_2014.delete_at(2)
-      expect(deleted_item).to eq("Sophia")
+      deleted_name = most_popular_girl_names_2014.delete_at(2)
+      expect(deleted_name).to eq("Sophia")
     end
 
     it "changes the composition of the array" do
