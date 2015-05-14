@@ -102,11 +102,11 @@ describe "manipulating arrays" do
     end
   end
 
-  context "insert method" do
+    context "insert method" do
     list_of_esoteric_programming_languages = ["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Ook!"]
     another_esoteric_language = "Malbolge"
 
-    it "inserts an element to the of the sixth position in list_of_esoteric_programming_languages array" do
+    it "inserts an element to the of the seventh position in list_of_esoteric_programming_languages array" do
       # replace the underscore with your answer
       answer = __
       expect(answer).to eq(["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Malbolge", "Ook!"])
