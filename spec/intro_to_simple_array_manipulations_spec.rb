@@ -1,3 +1,4 @@
+require "pry"
 describe "manipulating arrays" do
 
   context 'push method' do
@@ -5,7 +6,8 @@ describe "manipulating arrays" do
     next_country = "Niger"
 
     it "adds an element to the end of an array" do
-      answer = __ # replace the underscore with your answer
+      # replace the underscore with your answer
+      answer = __
       expect(answer.last).to eq(next_country)
     end
   end
@@ -15,9 +17,13 @@ describe "manipulating arrays" do
     prepends = "Brooklyn Heights"
 
     it "adds an element to the front of an array" do
-      answer = __ # replace the underscore with your answer
+      # replace the underscore with your answer
+      answer = __
       expect(answer).to eq(["Brooklyn Heights", "Brooklyn Yards", "Cadman Plaza", "Clinton Hill", "Downtown Brooklyn", "DUMBO"])
       expect(answer).to be_an(Array)
+    end
+
+    it "increases the length of the array " do
       expect(neighborhoods_in_northwest_brooklyn.count).to eq(6)
     end
   end
@@ -26,8 +32,9 @@ describe "manipulating arrays" do
     great_hits_of_the_nineties = ["Baby One More Time", "Smells Like Teen Spirit", "Missing", "Walking On The Sun", "Hard Knock Life", "Losing My Religion"]
 
     it "removes the last element from an array and returns it as the result of the method call" do
-      answer = __ # replace the underscore with your answer
-      expect(answer).to eq("Losing My Religion")
+      # replace the underscore with your answer
+      deleted_string = __
+      expect(deleted_string).to eq("Losing My Religion")
     end
 
     it "shortens the length of the array by 1" do
@@ -40,9 +47,13 @@ describe "manipulating arrays" do
     removed = ["Clair Olivia Hanks Huxtable", "Dr. Heathcliff Huxtable"]
 
     it "removes the last 2 elements in an array and returns them as the result of the method call" do
-      answer = __ # replace the underscore with your answer
+      # replace the underscore with your answer
+      answer = __
       expect(answer).to eq(removed)
-      expect(answer.count).to eq(2)
+    end
+
+    it "shortens the length of the array" do
+      expect(characters_in_the_cosby_show.count).to eq(10)
     end
   end
 
@@ -50,8 +61,9 @@ describe "manipulating arrays" do
     my_favorite_cities = ["Lagos", "Cape Town", "Nairobi", "San Francisco", "Gaborone", "New York", "Berlin", "London"]
 
     it "returns the first element in the array as the result of the method call" do
-      answer = __ # replace the underscore with your answer
-      expect(answer).to eq("Lagos")
+      # replace the underscore with your answer
+      deleted_city = __
+      expect(deleted_city).to eq("Lagos")
     end
 
     it "shortens the length of the array by 1" do
@@ -64,8 +76,12 @@ describe "manipulating arrays" do
     removed = ["Blue Bell Creameries", "Ben & Jerry's"]
 
     it "removes and returns the first 2 elements in array" do
-      answer = __ # replace the underscore with your answer
-      expect(answer).to eq(removed)
+      # replace the underscore with your answer
+      deleted_strings = __
+      expect(deleted_strings).to eq(removed)
+    end
+
+    it "shortens the length of the array by 2" do
       expect(ice_cream_brands.count).to eq(3)
     end
   end
@@ -75,31 +91,39 @@ describe "manipulating arrays" do
     prepends = ["Mauds Ice Cream"]
 
     it "adds the elements in one array to the end of a second array on which concat is called on" do
-      answer = __ # replace the underscore with your answer
-      expect(answer).to eq(["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's", "Mauds Ice Cream"])
-      expect(answer).to be_an(Array)
+      # replace the underscore with your answer
+      expanded_array = __
+      expect(expanded_array).to eq(["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's", "Mauds Ice Cream"])
+      expect(expanded_array).to be_an(Array)
+    end
+
+    it "increase the length of the array" do
       expect(ice_cream_brands.count).to eq(6)
     end
   end
 
   context "insert method" do
     list_of_esoteric_programming_languages = ["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Ook!"]
-    prepends = "Malbolge"
+    prepend = "Malbolge"
 
     it "inserts an element to the of the sixth position in list_of_esoteric_programming_languages array" do
-      answer = __ # replace the underscore with your answer
+      # replace the underscore with your answer
+      answer = __
       expect(answer).to eq(["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Malbolge", "Ook!"])
+    end
+
+    it "increases the length of the array" do
       expect(list_of_esoteric_programming_languages.count).to eq(8)
     end
   end
 
   context "uniq method" do
     captain_planet_and_the_planeteers = ["Captain Planet", "Gaia", "Kwame", "Gi", "Linka", "Wheeler", "Gaia"]
-    new_array = ["Captain Planet", "Gaia", "Kwame", "Gi", "Linka", "Wheeler"]
+
     it "returns a new array by removing duplicate values in an array" do
-      answer = __ # replace the underscore with your answer
-      expect(answer).to eq(["Captain Planet", "Gaia", "Kwame", "Gi", "Linka", "Wheeler"])
-      expect(answer.count).to eq(6)
+      # replace the underscore with your answer
+      new_array = __
+      expect(new_array).to eq(["Captain Planet", "Gaia", "Kwame", "Gi", "Linka", "Wheeler"])
       expect(captain_planet_and_the_planeteers).to_not eq(new_array)
     end
   end
@@ -109,10 +133,9 @@ describe "manipulating arrays" do
     military_academies_in_newyork = ["United States Military Academy at West Point", " United States Merchant Marine Academy"]
 
     it "returns a new array that is a combination of two or more arrays" do
-      answer = __ # replace the underscore with your answer
-      expect(answer).to eq(["New York University", "Manhattan School of Music ", "Columbia University", "The Juilliard School", "Bard College", "Cooper Union", "United States Military Academy at West Point", " United States Merchant Marine Academy"]
-)
-      expect(answer.count).to eq(8)
+      # replace the underscore with your answer
+      new_array = __
+      expect(new_array.count).to eq(8)
     end
   end
 
@@ -120,8 +143,17 @@ describe "manipulating arrays" do
     most_popular_boy_names_2014 = ["Liam", "Noah", "Ethan", "Mason", "Logan", "Lucas", "Jacob", "Aiden", "Jackson", "Jack"]
 
     it "deletes all items in array that are equal to the item passed as an argument" do
-      answer = __# replace the underscore with your answer
-      expect(answer).to eq("Jack")
+       # replace the underscore with your answer
+      deleted_string =  __
+      expect(deleted_string).to eq("Jack")
+    end
+
+    it "changes the composition of the array" do
+      expect(most_popular_boy_names_2014).not_to include("Jack")
+    end
+
+    it "changes the length of the array" do
+      expect(most_popular_boy_names_2014.count).to eq(9)
     end
   end
 
@@ -129,8 +161,16 @@ describe "manipulating arrays" do
     most_popular_girl_names_2014 = ["Emma", "Olivia","Sophia","Ava", "Isabella", "Mia", "Charlotte", "Emily", "Abigail", "Harper"]
 
     it "delete item at the third position in most_popular_girl_names_2014 a" do
-      answer = __ # replace the underscore with your answer
-      expect(answer).to eq("Sophia",)
+      # replace the underscore with your answer
+      deleted_item = __
+      expect(deleted_item).to eq("Sophia")
+    end
+
+    it "changes the composition of the array" do
+      expect(most_popular_girl_names_2014).to_not include("Sophia")
+    end
+
+    it "changes the length of the array" do
       expect(most_popular_girl_names_2014.count).to eq(9)
     end
   end
