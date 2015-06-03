@@ -102,7 +102,7 @@ describe "manipulating arrays" do
     end
   end
 
-  context "insert method" do
+    context "insert method" do
     list_of_esoteric_programming_languages = ["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Ook!"]
     another_esoteric_language = "Malbolge"
 
