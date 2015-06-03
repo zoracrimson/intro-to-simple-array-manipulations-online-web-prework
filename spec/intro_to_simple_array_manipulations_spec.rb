@@ -53,7 +53,7 @@ describe "manipulating arrays" do
     end
 
     it "shortens the length of the array" do
-      expect(characters_in_the_cosby_show.count).to eq(10)
+      expect(characters_in_the_cosby_show.count).to eq(9)
     end
   end
 
