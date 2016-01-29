@@ -39,4 +39,4 @@ You can see that while `.pop` removes `"Cai Guo-Qiang"` from the `artists` array
 
 **Top-tip:** *One of the most common problems you will encounter on your journey to becoming a software developer is not knowing what object a method returns. For example, you might assume that the result of a method call is a string but instead it is an array.*  
 
-<a href='https://learn.co/lessons/intro-to-simple-array-manipulations' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-simple-array-manipulations' title='Objectives'>Objectives</a> on Learn.co and start learning to code for free.</p>
