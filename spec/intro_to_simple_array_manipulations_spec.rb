@@ -43,11 +43,11 @@ end
 
 describe "#pop_with_args" do
   before(:each) do 
-    @chars_in_game_of_thrones = ["Danny T.", "Tyrion Lannister", "Stable Boy", "Sandor Clegane, aka The Mountain"]
+    @chars_in_game_of_thrones = ["Danny T.", "Tyrion Lannister", "Stable Boy", "Sandor Clegane"]
     @chars_arya_killed = pop_with_args(@chars_in_game_of_thrones)
   end 
   it "takes in an argument of an array and uses the pop method with an argument of 2 to remove the last two array items and return them" do 
-    expect(@chars_arya_killed).to eq(["Stable Boy", "Sandor Clegane, aka The Mountain"])
+    expect(@chars_arya_killed).to eq(["Stable Boy", "Sandor Clegane"])
   end 
 
   it "decreases the length of the array by 2" do
